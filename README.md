@@ -26,6 +26,7 @@ Ensure you have the following installed:
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- [Prometheus](https://prometheus.io/docs/introduction/overview/)
 
 ## Getting Started
 
@@ -48,6 +49,13 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 ### 4. Run Using Docker
 ```bash
 docker-compose up --build
+```
+
+## Running Prometheus
+
+Prometheus is configured using the `prometheus.yml` file. To run Prometheus manually:
+```bash
+prometheus --config.file=prometheus.yml
 ```
 
 ## Endpoints
@@ -80,6 +88,6 @@ This project is licensed under the MIT License.
 ---
 
 ### 📌 Author
-Developed by **Athul-Ramesan**  
+Developed by **Athul-Rameshan-K-V**  
 For contributions, issues, or improvements, feel free to open a pull request or an issue.
 
